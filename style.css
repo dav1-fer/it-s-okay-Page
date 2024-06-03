@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111111;
+    color: #E0D3C3;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h1 {
+    margin-top: 24vh;
+    font-family: "Bodoni Moda";
+    font-weight: 600;
+    font-size: 120px;
+    margin-bottom: 20px;
+}
+
+main h3 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 6px;
+    margin-bottom: 64px;
+    text-transform: uppercase;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto 16px 10%;
+}
+
+.circle:hover {
+    background-color: #E0D3C3;
+    color: #111111;
+    cursor: pointer;
+}
+
+.circle a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.lineBreak {
+    height: 1px;
+    width: 80%;
+    background-color: #fff;
+}
+
+main p {
+    margin: 16px;
+    width: 80%;
+    line-height: 160%;
+    letter-spacing: 0.6px;
+}
+
+span {
+    font-style: oblique;
+}
+
+.white-text {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 24px;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 767px) {
+    main h1 {
+      font-size: 80px;
+    }
+    main h3 {
+        font-size: 20px;
+    }
+    .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+    }
+    .circle p {
+        font-size: 12px;
+    }
+    main p {
+        font-size: 12px;
+    }
+    .white-text {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 526px) {
+    main h1 {
+        font-size: 50px;
+      }
+      main h3 {
+          font-size: 14px;
+      }
+      .circle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 48px;
+          height: 48px;
+      }
+      .circle p {
+          font-size: 12px;
+      }
+      main p {
+        font-size: 11px;
+    }
+    .white-text {
+        font-size: 13px;
+    }
+}
